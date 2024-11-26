@@ -1,0 +1,144 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+  transition: all 0.3s ease;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #44362F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.container{
+    width:54%;
+    margin: 0 auto;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+   
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+   
+}
+
+.heading p{
+    padding: 1rem;
+    /* border: 2px solid black; */
+    font-size: 3rem;
+}
+
+.boxes{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    /* margin: 0 auto ; */
+    display: flex;
+    /* padding: 1rem; */
+    /* gap: 0.5rem; */
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+.btn-box{
+    width: 28rem;
+    height: 24rem;
+   
+}
+
+.btn{
+    height: 8rem;
+    width: 8rem;
+    font-size: 3rem;
+    color:  #737171;
+    font-weight: 500;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #B4B4B4 ;
+}
+.turn-container{
+    position: relative;
+    width: 7rem;
+    height: 5rem;
+    margin: auto;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+}
+
+.turn-container h3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 1.8rem;
+}
+
+.turn-container .turn-box{
+    width: 6rem;
+    border: 2px solid rgb(48, 30, 30);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.btns{
+     /* margin-top: 0rem; */
+    display: flex;
+    gap: 5rem;
+}
+
+.btn-grp{
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    background-color:#B4B4B4  ;
+    color: #2d2623;
+    border: none;
+    cursor: pointer;
+}
+
+.new:hover{
+    padding: 0.8rem 3rem;
+    background-color: #737171;
+    color: white;
+}
+.reset:hover{
+    padding: 0.8rem 3rem;
+    background-color: #737171;
+    color: white;
+}
+.turn-container .turn-box:nth-child(even){
+    border-right: none ;
+}
+
+.bg{
+    position: absolute;
+    background-color: #B4B4B4 ;
+    bottom: 0;
+    left: -40px;
+    width: 6rem;
+    height: 2.5rem;
+    z-index: -1;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
